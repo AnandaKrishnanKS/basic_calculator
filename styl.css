@@ -1,0 +1,27 @@
+.main-frame {
+    width: 18rem;
+    border-radius: 20px;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.26);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(123, 44, 198);
+}
+
+.btnsection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    margin-top: 4%;
+    transition: .6s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
