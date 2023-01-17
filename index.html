@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,35 +24,52 @@
                 <div class="main-frame bg-light border border-secondary  p-3">
                     <div>
                         <h2 class="hed">calculator</h2>
-                        <input type="text" class="form-control">
+                        <input id="result" type="text" class="form-control text-center">
                     </div>
                     <div class="btnsection">
-                        <button class="btn rounded btn btn-outline-primary">7</button>
-                        <button class="btn rounded btn btn-outline-primary">8</button>
-                        <button class="btn rounded btn btn-outline-primary">9</button>
-                        <button class="btn rounded btn btn-outline-primary">/</button>
+                        <button onclick="displaydata(7)" type="button"
+                            class="btn rounded btn btn-outline-primary">7</button>
+                        <button onclick="displaydata(8)" type="button"
+                            class="btn rounded btn btn-outline-primary">8</button>
+                        <button onclick="displaydata(9)" type="button"
+                            class="btn rounded btn btn-outline-primary">9</button>
+                        <button onclick="displaydata('/')" type="button"
+                            class="btn rounded btn btn-outline-primary">/</button>
                     </div>
                     <div class="btnsection">
-                        <button class="btn rounded btn btn-outline-primary">4</button>
-                        <button class="btn rounded btn btn-outline-primary">5</button>
-                        <button class="btn rounded btn btn-outline-primary">6</button>
-                        <button class="btn rounded btn btn-outline-primary">x</button>
+                        <button onclick="displaydata(4)" type="button"
+                            class="btn rounded btn btn-outline-primary">4</button>
+                        <button onclick="displaydata(5)" type="button"
+                            class="btn rounded btn btn-outline-primary">5</button>
+                        <button onclick="displaydata(6)" type="button"
+                            class="btn rounded btn btn-outline-primary">6</button>
+                        <button onclick="displaydata('*')" type="button"
+                            class="btn rounded btn btn-outline-primary">x</button>
                     </div>
                     <div class="btnsection">
-                        <button class="btn rounded btn btn-outline-primary">1</button>
-                        <button class="btn rounded btn btn-outline-primary">2</button>
-                        <button class="btn rounded btn btn-outline-primary">3</button>
-                        <button class="btn rounded btn btn-outline-primary">-</button>
+                        <button onclick="displaydata(1)" type="button"
+                            class="btn rounded btn btn-outline-primary">1</button>
+                        <button onclick="displaydata(2)" type="button"
+                            class="btn rounded btn btn-outline-primary">2</button>
+                        <button onclick="displaydata(3)" type="button"
+                            class="btn rounded btn btn-outline-primary">3</button>
+                        <button onclick="displaydata('-')" type="button"
+                            class="btn rounded btn btn-outline-primary">-</button>
                     </div>
                     <div class="btnsection">
-                        <button class="btn rounded btn btn-outline-primary">=</button>
-                        <button class="btn rounded btn btn-outline-primary">0</button>
-                        <button class="btn rounded btn btn-outline-primary">+</button>
-                        <button class="btn rounded btn btn-outline-primary">.</button>
+                        <button onclick="equal()" type="submit" class="btn rounded btn btn-outline-primary">=</button>
+                        <button onclick="displaydata(0)" type="button"
+                            class="btn rounded btn btn-outline-primary">0</button>
+                        <button onclick="displaydata('+')" type="button"
+                            class="btn rounded btn btn-outline-primary">+</button>
+                        <button onclick="displaydata('.')" type="button"
+                            class="btn rounded btn btn-outline-primary">.</button>
                     </div>
                     <div class="btnsection ms-3 me-3">
-                        <button class="btn rounded btn btn-outline-secondary">AC</button>
-                        <button class="btn rounded btn btn-outline-danger">Del</button>
+                        <button onclick="cleardata()" type="button"
+                            class="btn rounded btn btn-outline-secondary">AC</button>
+                        <button onclick="backspace()" type="submit"
+                            class="btn rounded btn btn-outline-danger">&#9003</button>
 
                     </div>
                 </div>
@@ -60,5 +78,6 @@
     </div>
 
 </body>
+<script src="./code.js"></script>
 
 </html>
